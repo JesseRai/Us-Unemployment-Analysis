@@ -4,13 +4,13 @@ This project automates the download, cleaning, and visualization of the U.S. Une
 
 ## Project Highlights
 
-- Automated download of the latest UNRATE CSV from [FRED](https://fred.stlouisfed.org/series/UNRATE) using Selenium  
-- Data cleaning and transformation with Pandas  
-- Time series visualization with:  
+-  Automated download of the latest UNRATE CSV from [FRED](https://fred.stlouisfed.org/series/UNRATE) using Selenium  
+-  Data cleaning and transformation with Pandas  
+-  Time series visualization with:  
   - Monthly unemployment rate  
   - 6-month moving average  
   - Clearly shaded recession periods (2008 and 2020)  
-- Summary statistics printed to the console  
+-  Summary statistics printed to the console  
 
 ## File Structure
 
@@ -19,6 +19,7 @@ us-unemployment-analysis/
 ├── unrate_analysis.py           # Main Python script
 ├── UNRATE.csv                   # Downloaded dataset
 ├── unemployment_rate_trend.png  # Exported plot
+├── requirements.txt             # List of required packages
 └── README.md                    # Project documentation
 ```
 
@@ -51,8 +52,8 @@ The output chart includes:
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/us-unemployment-analysis.git
-cd us-unemployment-analysis
+git clone https://github.com/JesseRai/Us-Unemployment-Analysis.git
+cd Us-Unemployment-Analysis
 ```
 
 2. Install dependencies:
@@ -78,7 +79,13 @@ seaborn
 selenium
 ```
 
-Also make sure you have:
+Or install them all at once using:
+
+```bash
+pip install -r requirements.txt
+```
+
+You’ll also need:
 - Google Chrome installed
-- The correct [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) in your system PATH
+- [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) in your system PATH
 
